@@ -1,0 +1,143 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    color: #3e497a;
+  }
+  
+  .about {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #21325e;
+    color: #f0f0f0;
+  }
+  
+  .about h2 {
+    font-size: 80px;
+    color: #3b3a36;
+    height: 50px;
+    position: relative;
+  }
+
+  .about h2::after
+  {
+      content: 'Hi, My Name is TommyLai';
+      color: #e9d35b;
+      position: absolute;
+      top: 0;
+      left: 0;
+      clip-path: ellipse(100px 100px at 0% 50%);
+      animation: spotlight 4s infinite ;
+
+  }
+
+  @keyframes spotlight{
+      0%{
+        clip-path: ellipse(100px 100px at 0% 50%);
+      }
+      50%{
+        clip-path: ellipse(100px 100px at 100% 50%);
+      }
+      100%{
+        clip-path: ellipse(100px 100px at 0% 50%);
+      }
+  }
+
+
+  
+  .about .prompt {
+    width: 40%;
+    font-size: 30px;
+  }
+  .prompt svg {
+    font-size: 60px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .skills {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills h1 {
+    color: #3e497a;
+  }
+  
+  .skills .list {
+    list-style: none;
+    width: 60%;
+  }
+  
+  .list span {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .about h2 {
+      font-size: 40px;
+    }
+  
+    .about .prompt {
+      margin-top: 10px;
+      font-size: 20px;
+      width: 80%;
+    }
+  
+    .skills {
+      text-align: center;
+    }
+    .list {
+      padding: 0;
+    }
+  
+    .skills h2 {
+      font-size: 30px;
+    }
+  }
+
+  .logo
+  {
+      font-size: 50px;
+  }
+
+  .skills h1
+  {
+    transform: translate(25px, 10px);
+  }
+
+  button{
+    padding: 25px 30px;
+    background-color: #050801;
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 36px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover{
+      background: #03e9f4;
+      color: #050801;
+      box-shadow: 0 0 5px #03e9f4,
+                  0 0 25px #03e9f4,
+                  0 0 50px #03e9f4,
+                  0 0 200px #03e9f4;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
+
+  .Resume h2{
+    font-size: 70px;
+  }

@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  font-family: Helvetica;
+  src: url(../public/Helvetica.ttf);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face
+{
+  font-family: Helvetica;
+  src: url(../public/Helvetica.ttf);
+}
+
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
